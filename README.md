@@ -7,7 +7,7 @@
 
 [![Status](https://img.shields.io/badge/Status-WIP%20(Research%20Prototype)-orange)]() 
 
-⚠️ **研究原型声明**：本项目为概念验证阶段（Proof of Concept），代码仅供研究参考，**完整复现文档将在Phase 2整理**。当前展示以视频和现场演示为主。
+⚠️ **研究原型声明**：本项目为概念验证阶段，代码仅供参考，**完整复现文档将在后续整理**。当前展示以视频和现场演示为主。
 
 ## 项目演进
 
@@ -54,7 +54,7 @@ Phase1_Stand/
 └── README.md
 ```
 
-## 为什么不是端到端？
+## 为什么不使用端到端？
 
 | 端到端（黑盒） | RoboResilience（白盒） |
 |---|---|
@@ -62,11 +62,16 @@ Phase1_Stand/
 | 摔了不知道在哪一层失败 | 明确知道处于Level 2还是Level 3 |
 | 需要海量数据 | 模块化，可独立调试 |
 
-## 快速开始
+## 当前状态
 
-```bash
-# 运行分层恢复演示
-python scripts\play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
+**已实现**：从Level 3（Crawl）到Level 1（Stand）的硬切换恢复系统，10天开发周期验证可行。
+
+**技术说明**：  
+- 基于IsaacLab + RSL-RL框架开发
+- 含自定义奖励函数与分层状态机逻辑
+- 完整环境配置将在Phase 2整理发布
+**Phase1观看演示**：[B站视频链接]（推荐，展示完整效果）
+
 ```
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
 **分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
