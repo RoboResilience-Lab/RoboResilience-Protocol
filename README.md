@@ -44,13 +44,13 @@ Phase0_ABC/
 ```text
 Phase1_Stand/
 ├── checkpoints/                    # 策略检查点（核心资产）
-│   ├── [crawl_to_superhero.pt]     # Level 3→2.5：四点支撑到超级英雄姿势
-│   ├── [superhero_to_double.pt]    # Level 2.5→2：撤手进入双膝跪地
-│   ├── [double_to_single.pt]       # Level 2→1.5：压缩弹簧到单膝
-│   └── [single_to_stand.pt]        # Level 1.5→1：爆发站立
+│   ├── crawl_to_superhero.pt     # Level 3→2.5：四点支撑到超级英雄姿势
+│   ├── superhero_to_double.pt    # Level 2.5→2：撤手进入双膝跪地
+│   ├── double_to_single.pt       # Level 2→1.5：压缩弹簧到单膝
+│   └── single_to_stand.pt        # Level 1.5→1：爆发站立
 │
-├── [play_hierarchical.py]          # 分层播放脚本（硬切换+红绿灯）
-├── [taxonomy_v0.1.json]            # 故障分类标准草案
+├── play_hierarchical.py          # 分层播放脚本（硬切换+红绿灯）
+├── taxonomy_v0.1.json            # 故障分类标准草案
 └── README.md
 ```
 
