@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 # Changes: Added hierarchical policy switching, phase visualization, action blending logic
-"""RoboResilience Protocol - 4阶段分层恢复（带冷却时间防震荡）"""
+"""RoboResilience Protocol - 4阶段分层恢复"""
 import sys
 sys.path.insert(0, r"E:\IsaacLab\scripts\reinforcement_learning\rsl_rl")
 import argparse
@@ -304,4 +304,5 @@ def main(env_cfg: ManagerBasedRLEnvCfg | DirectRLEnvCfg, agent_cfg: RslRlBaseRun
 if __name__ == "__main__":
     main()
     simulation_app.close()
+
 
