@@ -8,6 +8,15 @@
 ## 项目演进
 
 ### Phase 0: 初始化策略研究（已完成）
+**Phase0文件结构**：
+```text
+Phase0_ABC/
+├── README.md
+├── REPORT.md
+├── abc_comparison(1).xlsx
+├── reward_convergence.jpg                     
+└── stand_up_reward.jpg 
+```
 **核心发现**：机器人必须从多支撑点姿态（跪姿，Level 2）开始学习站立，从平躺（Level 3）开始是绝境，从站立（Level 1）开始则是痉挛陷阱。
 
 **关键数据**：
@@ -26,9 +35,9 @@
 - 硬切换状态机：4个独立策略，明确可审计的切换逻辑
 - 可视化验证：头顶红绿灯实时显示当前故障等级（红→橙→黄→青→绿）
 
-**文件结构**：
+**Phase1文件结构**：
 ```text
-RoboResilience-Protocol/
+Phase1_Stand/
 ├── checkpoints/                    # 策略检查点（核心资产）
 │   ├── [crawl_to_superhero.pt](./checkpoints/crawl_to_superhero.pt)      # Level 3→2.5：四点支撑到超级英雄姿势
 │   ├── [superhero_to_double.pt](./checkpoints/superhero_to_double.pt)    # Level 2.5→2：撤手进入双膝跪地
