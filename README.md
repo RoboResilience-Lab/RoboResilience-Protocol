@@ -65,6 +65,6 @@ Phase1_Stand/
 # 运行分层恢复演示
 python Phase1/play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
 ```
-**播放脚本**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)
-**环境配置**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
-**分类标准**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
+**播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
+**环境配置**：[Phase1_Stand/stand_up_env_cfg.py](./Phase1_Stand/stand_up_env_cfg.py)
+**分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
