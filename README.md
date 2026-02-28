@@ -66,5 +66,4 @@ Phase1_Stand/
 python scripts\play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
 ```
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
-**环境配置**：[Phase1_Stand/stand_up_env_cfg.py](./Phase1_Stand/stand_up_env_cfg.py)
 **分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
