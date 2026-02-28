@@ -39,7 +39,7 @@ RoboResilience-Protocol/
 ├── [stand_up_env_cfg.py](./stand_up_env_cfg.py)                          # 环境配置文件（IsaacLab）
 ├── [taxonomy_v0.1.json](./taxonomy_v0.1.json)                            # 故障分类标准草案（JSON）
 └── README.md
-
+```
 
 ## 为什么不是端到端？
 
