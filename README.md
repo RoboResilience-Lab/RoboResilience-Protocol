@@ -31,7 +31,7 @@ Phase0_ABC/
 **README**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)<br>
 **详细报告**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
 
-### Phase 1: 分层恢复系统（已超预期完成）
+### Phase 1: 分层恢复系统（已实现）
 **原计划**：优化B组（跪姿）实现完全站立  
 **实际完成**：建立了**4级课程学习链条**（Crawl→Superhero→Double→Single→Stand），实现了从Level 3到Level 1的硬切换恢复系统。
 
@@ -44,13 +44,13 @@ Phase0_ABC/
 ```text
 Phase1_Stand/
 ├── checkpoints/                    # 策略检查点（核心资产）
-│   ├── [crawl_to_superhero.pt](./checkpoints/crawl_to_superhero.pt)      # Level 3→2.5：四点支撑到超级英雄姿势
-│   ├── [superhero_to_double.pt](./checkpoints/superhero_to_double.pt)    # Level 2.5→2：撤手进入双膝跪地
-│   ├── [double_to_single.pt](./checkpoints/double_to_single.pt)          # Level 2→1.5：压缩弹簧到单膝
-│   └── [single_to_stand.pt](./checkpoints/single_to_stand.pt)            # Level 1.5→1：爆发站立
+│   ├── [crawl_to_superhero.pt]     # Level 3→2.5：四点支撑到超级英雄姿势
+│   ├── [superhero_to_double.pt]    # Level 2.5→2：撤手进入双膝跪地
+│   ├── [double_to_single.pt]       # Level 2→1.5：压缩弹簧到单膝
+│   └── [single_to_stand.pt]        # Level 1.5→1：爆发站立
 │
-├── [play_hierarchical.py](./play_hierarchical.py)                        # 分层播放脚本（硬切换+红绿灯）
-├── [taxonomy_v0.1.json](./taxonomy_v0.1.json)                            # 故障分类标准草案
+├── [play_hierarchical.py]          # 分层播放脚本（硬切换+红绿灯）
+├── [taxonomy_v0.1.json]            # 故障分类标准草案
 └── README.md
 ```
 
