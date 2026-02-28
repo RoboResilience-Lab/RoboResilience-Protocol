@@ -63,7 +63,7 @@ Phase1_Stand/
 
 ```bash
 # 运行分层恢复演示
-python Phase1/play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
+python Phase1_Stand/play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
 ```
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
 **环境配置**：[Phase1_Stand/stand_up_env_cfg.py](./Phase1_Stand/stand_up_env_cfg.py)
