@@ -28,7 +28,7 @@ Phase0_ABC/
 - B组（跪姿）：-89 reward，功能性恢复（半站立）
 - C组（站立）：-88 reward，动态扭曲/自踢
 
-**README**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)
+**README**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)<br>
 **详细报告**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
 
 ### Phase 1: 分层恢复系统（已超预期完成）
@@ -72,5 +72,5 @@ Phase1_Stand/
 - 完整环境配置将在Phase 2整理发布
 
 **Phase1观看演示**：[B站视频链接]（推荐，此处展示完整效果）<br>
-**播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
+**播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)<br>
 **分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
