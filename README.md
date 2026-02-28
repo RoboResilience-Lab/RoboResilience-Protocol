@@ -64,13 +64,13 @@ Phase1_Stand/
 
 ## 当前状态
 
-**已实现**：从Level 3（Crawl）到Level 1（Stand）的硬切换恢复系统，10天开发周期验证可行。
+**已实现**：从Level 3（Crawl）到Level 1（Stand）的硬切换恢复系统
 
 **技术说明**：  
 - 基于IsaacLab + RSL-RL框架开发
 - 含自定义奖励函数与分层状态机逻辑
 - 完整环境配置将在Phase 2整理发布
-**Phase1观看演示**：[B站视频链接]（推荐，展示完整效果）
+**Phase1观看演示**：[B站视频链接]（推荐，此处展示完整效果）
 
 ```
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)
