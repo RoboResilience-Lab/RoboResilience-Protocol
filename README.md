@@ -24,7 +24,8 @@ Phase0_ABC/
 - B组（跪姿）：-89 reward，功能性恢复（半站立）
 - C组（站立）：-88 reward，动态扭曲/自踢
 
-**详细报告**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)
+**README**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)
+**详细报告**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
 
 ### Phase 1: 分层恢复系统（已超预期完成）
 **原计划**：优化B组（跪姿）实现完全站立  
@@ -63,3 +64,7 @@ Phase1_Stand/
 ```bash
 # 运行分层恢复演示
 python Phase1/play_hierarchical.py --task Isaac-H1-StandUp-v0 --num_envs 1
+```
+**播放脚本**：[Phase0_ABC/README.md](./Phase0_ABC/README.md)
+**环境配置**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
+**分类标准**：[Phase0_ABC/REPORT.md](./Phase0_ABC/REPORT.md)
