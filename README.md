@@ -74,3 +74,17 @@ Phase1_Stand/
 **Phase1观看演示**：[B站视频链接]（推荐，此处展示完整效果）<br>
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)<br>
 **分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
+
+## 怎么用（我自己这么用）
+
+**Step 1**: 看你的机器人现在哪着地
+- 手脚都着地？→ 用 `model_crawl.pt`（S4）
+- 手+左膝+右脚？→ 用 `model_superhero.pt`（S3）
+- 只有双膝？→ 用 `model_double.pt`（S2，危险快过）
+- 左脚站+右膝跪？→ 用 `model_single.pt`（S1，爆发）
+- 双脚站？→ 用 `model_stand.pt`（S0）
+
+**Step 2**: 如果摔了，退回上一步重来
+
+**注意**: 我自己还没完全摸清楚所有边界情况，6月高考后继续完善。
+
