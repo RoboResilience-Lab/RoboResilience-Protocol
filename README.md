@@ -80,8 +80,8 @@ Phase1_Stand/
 **Step 1**: 看你的机器人现在哪着地
 - 手脚都着地？→ 用 `model_crawl.pt`（S4）
 - 手+左膝+右脚？→ 用 `model_superhero.pt`（S3）
-- 只有双膝？→ 用 `model_double.pt`（S2，危险快过）
-- 左脚站+右膝跪？→ 用 `model_single.pt`（S1，爆发）
+- 只有双膝？→ 用 `model_double.pt`（S2）
+- 左脚站+右膝跪？→ 用 `model_single.pt`（S1）
 - 双脚站？→ 用 `model_stand.pt`（S0）
 
 **Step 2**: 如果摔了，退回上一步重来
