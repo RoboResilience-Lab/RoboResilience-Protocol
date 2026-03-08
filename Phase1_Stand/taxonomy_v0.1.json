@@ -1,5 +1,5 @@
 {
-  "protocol_version": "0.4",
+  "protocol_version": "0.1",
   "classification_target": "支撑几何状态（Support Geometry States）",
   "principle": "按地面接触点形成的多边形维度分类，非关节角度",
 
