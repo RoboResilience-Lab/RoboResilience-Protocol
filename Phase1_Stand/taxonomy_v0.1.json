@@ -1,6 +1,6 @@
 {
   "protocol_version": "0.1",
-  "classification_target": "支撑几何状态（Support Geometry States）",
+  "classification_target": "支撑几何状态作为分类标准（Support Geometry States）",
   "principle": "按地面接触点形成的多边形维度分类，非关节角度",
 
   "layer_1_geometric": {
@@ -10,7 +10,7 @@
       "dimension": "2D",
       "stability": "静态稳定",
       "policy": "model_crawl.pt",
-      "note": "混沌态：趴着，接触点不固定，质心在凸包内即稳"
+      "note": "混沌：趴着，接触点不固定，质心在凸包内即稳"
     },
     "S3_Tripod": {
       "name": "Superhero_Landing", 
@@ -18,7 +18,7 @@
       "dimension": "2D",
       "stability": "方向稳定",
       "policy": "model_superhero.pt",
-      "note": "锚点态：右腿后伸防翻滚，可长期停留"
+      "note": "锚点：右腿后伸防翻滚，可长期停留"
     },
     "S2_Bilateral": {
       "name": "Double_Kneel",
@@ -26,19 +26,19 @@
       "dimension": "1D",
       "stability": "纵向不稳定",
       "policy": "model_double.pt",
-      "note": "危险态：1D支撑，前后无约束，必须快速通过"
+      "note": "支撑：1D支撑，前后无约束，必须快速通过"
     },
     "S1_Unipodal": {
       "name": "Asymmetric_Kneel",
-      "support": "不对称多点（左脚站立+右膝跪地+可能右脚蹭地）",
+      "support": "不对称多点（左脚站立+右膝跪地+可能右脚蹭地，也可能是反着来）",
       "dimension": "1.5D/不对称2D",
       "stability": "可侧向发力",
       "policy": "model_single.pt",
-      "note": "蓄力态：高度差形成力矩杠杆，可蹬地爆发"
+      "note": "蓄力：高度差形成力矩杠杆，可蹬地爆发"
     },
     "S0_Bipedal": {
       "name": "Stand",
-      "support": "双脚为主，2D凸包",
+      "support": "双脚为主",
       "dimension": "2D", 
       "stability": "动态稳定",
       "policy": "model_stand.pt",
@@ -51,7 +51,7 @@
 
   "layer_2_functional": {
     "Level_3": {
-      "name": "平躺重建",
+      "name": "平躺/趴下重建",
       "states": ["S4"],
       "strategy": "多阶段重建",
       "time": "8-10s"
@@ -65,19 +65,22 @@
     "Level_1": {
       "name": "站立临界",
       "states": ["S1", "S0"],
-      "strategy": "临门一脚或陷阱修正",
+      "strategy": "发力站立",
       "time": "1-2s"
     }
   },
 
-  "layer_3_transition": {
-    "S4→S3": "多点→3点，形成非对称三角形",
-    "S3→S2": "手离地，仅剩双膝前后排列（危险）",
-    "S2→S1": "一膝离地，变为脚+膝不对称支撑（获得侧向力）",
-    "S1→S0": "双脚着地，2D支撑恢复",
-    "emergency": {
-      "S2_timeout": "停留>0.5s则退回S3",
-      "S0_trap": "内八则标记为亚稳态"
-    }
+"layer_3_transition": {
+  "S4→S3": "多点→3点，形成非对称三角形",
+  "S3→S2": "手离地，仅剩双膝对称排列", 
+  "S2→S1": "一膝离地，变为脚+膝不对称支撑（获得侧向力）",
+  "S1→S0": "双脚着地，2D支撑恢复",
+  "safety_mechanism": {
+    "type": "physical_hard_constraint",
+    "description": "失败时触发物理层保护",
+    "joint_torque_limit": "关节最大扭矩限制，防止过冲损坏执行器",
+    "workspace_clamping": "工作空间拓扑投影，实时查表截断越界动作", 
+    "emergency_stop": "姿态失控/碰撞检测触发时立即断电，保护周围环境和本体",
+    "failure_mode": "不尝试恢复，直接冻结或断电，等待人工干预"
   }
 }
