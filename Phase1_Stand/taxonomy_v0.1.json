@@ -16,7 +16,7 @@
       "name": "Superhero_Landing", 
       "support": "3点非对称（手+膝+对侧脚），三角形",
       "dimension": "2D",
-      "stability": "方向稳定",
+      "stability": "静态稳定",
       "policy": "model_superhero.pt",
       "note": "锚点：右腿后伸防翻滚，可长期停留"
     },
@@ -24,7 +24,7 @@
       "name": "Double_Kneel",
       "support": "2点并列（双膝跪地）",
       "dimension": "1D",
-      "stability": "纵向不稳定",
+      "stability": "静态稳定",
       "policy": "model_double.pt",
       "note": "支撑：1D支撑，前后无约束，双膝跪地"
     },
