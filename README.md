@@ -71,7 +71,7 @@ Phase1_Stand/
 - 含自定义奖励函数与分层状态机逻辑
 - 完整环境配置将在Phase 2整理发布
 
-**Phase1观看演示**：[B站视频链接]（推荐，此处展示完整效果）<br>
+**Phase1观看演示**：[Phase1_Stand/hard_switch.mp4](./Phase1_Stand/hard_switch.mp4)（推荐，此处展示完整效果）<br>
 **播放脚本**：[Phase1_Stand/play_hierarchical.py](./Phase1_Stand/play_hierarchical.py)<br>
 **分类标准草案**：[Phase1_Stand/taxonomy_v0.1.json](./Phase1_Stand/taxonomy_v0.1.json)
 
