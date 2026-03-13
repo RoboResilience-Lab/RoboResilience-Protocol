@@ -28,7 +28,7 @@
       "policy": "model_double.pt",
       "note": "支撑：1D支撑，前后无约束，双膝跪地"
     },
-    "S1_Spilt": {
+    "S1_Split": {
       "name": "Asymmetric_Kneel",
       "support": "不对称多点（左脚站立+右膝跪地+可能右脚蹭地，也可能是反着来）",
       "dimension": "1.5D/不对称2D",
