@@ -22,11 +22,11 @@
     },
     "S2_Bilateral": {
       "name": "Double_Kneel",
-      "support": "2点前后排列（双膝），线段",
+      "support": "2点并列（双膝跪地）",
       "dimension": "1D",
       "stability": "纵向不稳定",
       "policy": "model_double.pt",
-      "note": "支撑：1D支撑，前后无约束，必须快速通过"
+      "note": "支撑：1D支撑，前后无约束，双膝跪地"
     },
     "S1_Unipodal": {
       "name": "Asymmetric_Kneel",
