@@ -1,8 +1,5 @@
 # RoboResilience Protocol v0.1
 
-> **15天，从ABC对比实验到机器人分层恢复系统**  
-> 一个18岁高三学生的机器人故障恢复工程实验
-
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 [![Status](https://img.shields.io/badge/Status-WIP%20(Research%20Prototype)-orange)]() 
